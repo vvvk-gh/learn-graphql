@@ -47,6 +47,21 @@ our output is stored always store inside a data field property
 }
 ```
 
+schema polling enabled thats every sec its re-requesting the schema to verify thats its updated
+
+### Normal flow of a request
+
+```
+the client (Apollo) sends a request over HTTP as post request to the server thats running locally (localhost:9000).
+
+the server (localhost:9000) sends the some JSON data back.
+
+```
+
+by default all GraphQL request are `HTTP POST` requests
+
+### Miscellaneous
+
 ##### To know PID of the port running
 
 ```
