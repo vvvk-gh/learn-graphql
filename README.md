@@ -4,7 +4,48 @@
 
 once the server is up and running we will get a Apollo sandbox
 
-the tool helps to create graphql quieries
+Its the tool that helps us to create graphql quieries
+
+In the sandox
+its shows suggestions based on our schema provided in the code
+
+Types of requests we can make are the following
+
+```
+fragments
+mutations
+query
+```
+
+Executing the following will give the output that our resolver has for that field
+
+```
+query {
+    greeting
+}
+```
+
+we can also execute with empty brackets as by default its query operation
+
+```
+{
+    greeting
+}
+```
+
+They both outputs the same which is a object.
+
+our output is stored always store inside a data field property
+
+##### output
+
+```
+{
+    "data" : {
+        "greeting" : 'Hello World!'
+    }
+}
+```
 
 ##### To know PID of the port running
 
